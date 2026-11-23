@@ -45,6 +45,11 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+imputation = [
+  "xgboost>=1.7.0",
+  "scikit-learn>=1.1.0",
+]
+
 # Development dependencies
 dev = [
   "pytest>=7.0.0",
@@ -84,7 +89,7 @@ viz = [
 
 # All optional dependencies
 all = [
-  "cntmosaic[dev,docs,viz]",
+  "cntmosaic[dev,docs,viz,imputation]",
 ]
 
 [project.urls]
